@@ -236,6 +236,10 @@ a:hover {
     padding-left: 1.25em; /* 22.5px @ 18px em */
   }
 
+  #programming {
+    padding-right: 8.125em; /* 2 columns and a gutter to compress the list */
+  }
+
   #pset1 {
     float: left;
     width: 33.33333%;
@@ -250,6 +254,7 @@ a:hover {
     float: right;
     width: 33.33333%;
   }
+
 }
 
 /*840px @ 16px em 12 columns at 44px each and 24px gutters */
