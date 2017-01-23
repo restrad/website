@@ -70,6 +70,11 @@ video,
   margin: 0 auto;
 }
 
+.date {
+  color: tomato;
+  list-style: none;
+}
+
 /* ===== LAYOUT STYLES ===== */
 html {
   border-top: 2.6875em solid #142736; /* ~ 48px @ 18px/em */
