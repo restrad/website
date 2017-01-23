@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+/* Keep reset CSS to one minified line */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* ===== BASE STYLES ===== */
+
+/*
+  Setting type to a major third modular scale
+  http://www.modularscale.com/?1&em&1.25&web&text
+*/
+
+html {
+  color: white;
+  background-color: teal;
+  font-family: Roboto, Helvetica, Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 1.125em; /* 18px */
+  line-height: 1.25em; /* 22.5px @ 18px em = 1 gridline */
+}
+
+#page {
+  padding: 1.25em 1.25em; /* 22.5px @ 18px em */
+}
+nav {
+  display: block;
+}
+
+h1 {
+  font-size: 2.441em; /* 43.945px @ 18px em */
+  line-height: 1.536em; /* 67.5px @ 43.945px em */
+  padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
+}
+
+h2 {
+  font-size: 1.953em; /* 35.156px @ 18px em */
+  line-height: 1.28em; /* 45px @ 35.156px em */
+  padding-top: 0.32em; /* 11.25px @ 35.159px em */
+}
+
+h3 {
+  font-size: 1.563em; /* 28.125px @ 18px em */
+  line-height: 1.6em; /* 45px @ 28.125px em */
+  padding-top: 0.4em; /* 11.25px @ 28.125px em */
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+ul {
+  padding-bottom: 1.25em; /* 22.5px : html line-height */
+}
+
+li {
+  padding-bottom: 0.625em; /* 11.25px @ 18px em */
+}
+
+img,
+video,
+.gif {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 1.25em;
+  margin: 0 auto;
+}
+
+/* ===== LAYOUT STYLES ===== */
+html {
+  border-top: 2.6875em solid #142736; /* ~ 48px @ 18px/em */
+}
+
+nav {
+  font-size: 0.8888888889em; /* 16px @ 18px em */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0.8em 0.4em rgba(0,0,0,0.26); /*The shadow of the navigation bar 14.4px down, 7.2px blur radius*/
+  box-sizing: border-box;
+}
+
+/* ===== MODULAR STYLES ===== */
+
+ul li ul li { /* list inside a list */
+  list-style: square inside;
+}
+
+ul li ul li ul li { /* list inside a list inside a list */
+  list-style: disc inside;
+  padding-left: 0.625em; /* 11.25px @ 18px em Half a gridline */
+}
+
+ul li ul li ul li ul li { /* list inside a list inside a list inside a list */
+  list-style: circle inside;
+  padding-left: 0.625em; /* 11.25px @ 18px em Half a gridline */
+}
+
+li:last-child {
+  padding-bottom: 0;
+}
+
+ul li ul:last-child {
+  padding-bottom: 0;
+}
+
+#pets .photo p {
+  padding-bottom: 0;
+}
+
+
+.nav li {
+  display: block;
+  float: left;
+  width: 50%;
+  list-style-type: none;
+  padding-bottom: 0;
+}
+
+ul li ul li:first-child {
+  padding-top: 0.625em; /* 11.25px @ 18px em */
+}
+
+#hobbies h3 {
+  padding-top: 0;
+}
+
+#hobbies ul,
+#hobbies ul li {
+  padding-bottom: 0;
+}
+
+#volunteer-work ul li ul li {
+  list-style: none;
+}
+
+#resume-footer {
+  padding-top: 1.25em; /* 22.5px @ 18px em */
+}
+
+#awards ul {
+  padding-top: 0.625em; /* 22.5px @ 18px em */
+}
+
+/* Navigation */
+nav {
+  font-weight: 200;
+}
+
+.nav {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 0;
+}
+
+.nav a {
+  display: block;
+  text-align: center;
+  line-height: 1.3em; /* Keep 18px font line height while at 16px font */
+  padding: 0.666em 0.333em; /* ~ 12px 6px @ 18px/em */
+  background-color: black;
+  color: white;
+  border-bottom: 0;
+}
+
+/* ===== STATE STYLES ===== */
+
+a:hover {
+  background-color: gray;
+}
+
+#active a {
+  font-weight: 500;
+  color: black;
+  background-color: white;
+}
+
+#contact-info a {
+  color: tomato;
+  border-bottom: 0.05263157895em dotted;
+}
+
+/*430px  @ 16px em */
+@media screen and (min-width: 26.875em) {
+  nav {
+    font-size: 1em; /* 18px @ 18px em */
+  }
+  .nav a {
+    line-height: 1em;
+  }
+
+  video,
+  img {
+    max-height: 80vh;
+  }
+}
+
+/*600px  @ 16px em 8 columns at 57px each and 16px gutters */
+@media screen and (min-width: 37.5em) {
+  #page {
+    padding-left: 2.6666666667%; /* 16 px out of 600px */
+    padding-right: 2.6666666667%; /* 16 px out of 600px */
+  }
+
+  video {
+    margin: 0;
+    height: auto;
+    width: 48.5915492958%; /*4 columns */
+  }
+
+  #shelly-text {
+    float: right;
+    width: 48.5915492958%; /*4 columns */
+  }
+
+  footer {
+    clear: both;
+  }
+
+  ul li ul li ul li { /* list inside a list inside a list */
+    padding-left: 1.25em; /* 22.5px @ 18px em */
+  }
+
+  ul li ul li ul li ul li { /* list inside a list inside a list inside a list */
+    padding-left: 1.25em; /* 22.5px @ 18px em */
+  }
+}
+
+/*840px @ 16px em 12 columns at 44px each and 24px gutters */
+@media screen and (min-width: 52.5em) {
+  #page {
+    padding-left: 10.9523809524%; /* 92px out of 840px */
+    padding-right: 10.9523809524%; /* 92px out of 840px */
+  }
+
+  video {
+    margin: 0;
+    width: 48.1707317073%; /* 316/656*100 */
+  }
+}
+
+/* 1032px @ 16px em 12 columns at 60px each and 24px gutters */
+@media screen and (min-width: 64.5em) {
+  #page {
+    padding-left: 18.6046511628%; /* 192px out of 1032px */
+    padding-right: 10.46511628%; /* 108px out of 1032px */
+  }
+
+  #dunes3,
+  #starved3 {
+    float: right;
+    height: auto;
+    width: 48.3333333333%; /* Added a 24px gutter between both images */
+  }
+
+  #dunes4,
+  #starved4 {
+    height: auto;
+    width: 48.3333333333%; /* Added a 24px gutter between both images */
+  }
+
+  #dunes3 {
+    padding-top: 0.625em;
+  }
+
+  #starved1 {
+    height: auto;
+    width: 48.3333333333%; /* Added a 24px gutter between both images */
+  }
+
+  #starvedrock-text {
+    float: right;
+    width: 48.3333333333%; /* Added a 24px gutter between both images */
+  }
+}
