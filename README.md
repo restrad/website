@@ -1,8 +1,6 @@
-Project 2 for ITMD 361
-
 Project Description
 
-This project builds on Project One, which you will fully style with CSS to provide a basic typographic treatment and responsive design that makes judicious use of media queries and relative units (em/rem, vw, %). You will deploy your pages to a server pointed at by your personal domain name, or a subdomain if you have an existing professional web presence
+Fully style with CSS to provide a basic typographic treatment and responsive design that makes judicious use of media queries and relative units (em/rem, vw, %). You will deploy your pages to a server pointed at by your personal domain name, or a subdomain if you have an existing professional web presence
 
 
 Project Goals
