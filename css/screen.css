@@ -257,30 +257,18 @@ a:hover {
     padding-right: 10.46511628%; /* 108px out of 1032px */
   }
 
-  #dunes3,
-  #starved3 {
+  #pset1 {
+    float: left;
+    width: 33.33333%;
+  }
+
+  #pset2 {
+    display: inline-block;
+    width: 33.33333%;
+  }
+
+  #pset3 {
     float: right;
-    height: auto;
-    width: 48.3333333333%; /* Added a 24px gutter between both images */
-  }
-
-  #dunes4,
-  #starved4 {
-    height: auto;
-    width: 48.3333333333%; /* Added a 24px gutter between both images */
-  }
-
-  #dunes3 {
-    padding-top: 0.625em;
-  }
-
-  #starved1 {
-    height: auto;
-    width: 48.3333333333%; /* Added a 24px gutter between both images */
-  }
-
-  #starvedrock-text {
-    float: right;
-    width: 48.3333333333%; /* Added a 24px gutter between both images */
+    width: 33.33333%;
   }
 }
