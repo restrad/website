@@ -6,6 +6,12 @@ $.noConflict();
 (function($){
   $(document).ready(
     function() {
+
+      $('.b-top').on('click', function(e) { //Handles the click/tap on the TOP button
+        e.preventDefault();
+        $('body,html').animate({scrollTop: 0},500); //Scrolls top the very top, 500 duration
+      });
+
       $(window).scroll(function () {
         $top = $('.b-top');
         var offset = 600; //600 pixels
