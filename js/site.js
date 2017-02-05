@@ -6,8 +6,15 @@ $.noConflict();
 (function($){
   $(document).ready(
     function() {
-
-
+      $(window).scroll(function () {
+        $top = $('.b-top');
+        var offset = 600; //600 pixels
+        ($(this).scrollTop() > offset ? $top.addClass('visible') : $top.removeClass('visible'));
+        /*
+        Adds the 'visible' class if scrolled 600 or more pixels, removes the class if not
+        Adds visible class so CSS can make it appear or disappear
+        */
+      });
     }
   )
 })(jQuery);

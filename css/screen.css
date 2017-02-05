@@ -152,6 +152,10 @@ ul li ul li:first-child {
   padding-top: 0.625em; /* 22.5px @ 18px em */
 }
 
+.b-top {
+   visibility: hidden;
+}
+
 /* Navigation */
 nav {
   font-weight: 200;
@@ -267,6 +271,30 @@ a:hover {
   video {
     margin: 0;
     width: 48.1707317073%; /* 316/656*100 */
+  }
+
+  #top { /*Styles for the back-to-top button*/
+  box-shadow: 0 0.1818181818em 0.3636363636em rgba(0,0,0,0.26);/*The shadow of the navigation bar 4px down, 8px blur radius*/
+  height: 3.409090909em; /*75px / 22px*/
+  width: 3.409090909em;
+  line-height: 3.409090909em;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  border-radius: 50%; /*Circular shape*/
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #37003C;
+  color: #00FE87;
+  }
+
+/*  .b-top {
+     visibility: hidden;
+  }*/
+
+  .b-top.visible {
+    visibility: visible;
   }
 }
 
