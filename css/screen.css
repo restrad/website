@@ -15,8 +15,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
-  color: white;
-  background-color: teal;
+  color: #FFEDBF;
+  background-color: #1A1A1A;
   font-family: Roboto, Helvetica, Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 1.125em; /* 18px */
   line-height: 1.25em; /* 22.5px @ 18px em = 1 gridline */
@@ -77,7 +77,7 @@ video,
 
 /* ===== LAYOUT STYLES ===== */
 html {
-  border-top: 2.6875em solid #142736; /* ~ 48px @ 18px/em */
+  border-top: 2.6875em solid white; /* ~ 48px @ 18px/em */
 }
 
 nav {
@@ -86,7 +86,7 @@ nav {
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 0.8em 0.4em rgba(0,0,0,0.26); /*The shadow of the navigation bar 14.4px down, 7.2px blur radius*/
+  /* box-shadow: 0 0.8em 0.4em rgba(0,0,0,0.26); /*The shadow of the navigation bar 14.4px down, 7.2px blur radius*/
   box-sizing: border-box;
 }
 
@@ -285,8 +285,8 @@ a:hover {
     display: block;
     text-align: center;
     text-decoration: none;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
 
   /*.b-top {
