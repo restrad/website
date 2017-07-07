@@ -273,7 +273,8 @@ a:hover {
   }
 
   #cset1,
-  #dset1 {
+  #dset1,
+  #aset1 {
     float: left;
     width: 50%;
   }
