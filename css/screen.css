@@ -33,12 +33,14 @@ h1 {
   font-size: 2.441em; /* 43.945px @ 18px em */
   line-height: 1.536em; /* 67.5px @ 43.945px em */
   padding-bottom: 0.512em; /* 22.5px @ 43.945px em */
+  color: #f7914b;
 }
 
 h2 {
   font-size: 1.953em; /* 35.156px @ 18px em */
   line-height: 1.28em; /* 45px @ 35.156px em */
   padding-top: 0.32em; /* 11.25px @ 35.159px em */
+  color: #f7914b;
 }
 
 h3 {
@@ -71,7 +73,7 @@ video,
 }
 
 .date {
-  color: #f7914b;
+  color: #D64F2C;
   list-style: none;
 }
 
@@ -94,6 +96,7 @@ nav {
 
 ul li ul li { /* list inside a list */
   list-style: square inside;
+  
 }
 
 ul li ul li ul li { /* list inside a list inside a list */
@@ -181,7 +184,7 @@ nav {
 /* ===== STATE STYLES ===== */
 
 a:hover {
-  background-color: gray;
+  background-color: black;
 }
 
 #active a {
@@ -191,7 +194,7 @@ a:hover {
 }
 
 #contact-info a {
-  color: #f7914b;
+  color: #FFEDBF;
   border-bottom: 0.05263157895em dotted;
 }
 
@@ -240,7 +243,9 @@ a:hover {
     padding-left: 1.25em; /* 22.5px @ 18px em */
   }
 
-  #programming {
+  #programming, 
+  #coursework,
+  #development {
     padding-right: 8.125em; /* 2 columns and a gutter to compress the list */
   }
 
@@ -259,6 +264,11 @@ a:hover {
     width: 33.33333%;
   }
 
+  #cset1,
+  #dset1 {
+    float: left;
+    width: 50%;
+  }
 }
 
 /*840px @ 16px em 12 columns at 44px each and 24px gutters */
