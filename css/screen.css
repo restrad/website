@@ -272,7 +272,8 @@ a:hover {
 
   #programming, 
   #coursework,
-  #development {
+  #development,
+  #software {
     padding-right: 8.125em; /* 2 columns and a gutter to compress the list */
   }
 
@@ -296,7 +297,8 @@ a:hover {
 
   #cset1,
   #dset1,
-  #aset1 {
+  #aset1,
+  #sset1 {
     float: left;
     width: 50%;
   }
